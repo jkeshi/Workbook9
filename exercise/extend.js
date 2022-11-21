@@ -21,8 +21,16 @@ let person = new Person("Joy", "Wanjama");
         this.jobTitle = jobTitle
         this.payRate = payRate
     }
+    getPayStub(){
+      
+//use backtics anytime you use the dollarsigns
+        return `Employee Name: ${this.getFullName()}
+        Job Title: ${this.jobTitle}
+        Weekly Title: ${this.payRate * 40}`
+    }
  }
 
  let employee = new Employee("Ngoc", "Nguyen", 1, "software dev godess",20000);
  console.log(employee.getFullName())
+ console.log(employee.getPayStub());
  
